@@ -1,6 +1,10 @@
 {
     "name": "jhonoryza/argotunnel-laravel",
     "description": "integrate with argotunnel tcp connection for database with laravel",
+    "keywords": [
+        "argotunnel laravel",
+        "cloudflared laravel"
+    ],
     "type": "library",
     "license": "MIT",
     "authors": [
