@@ -1,0 +1,34 @@
+{
+    "name": "jhonoryza/argotunnel-laravel",
+    "description": "integrate with argotunnel tcp connection for database with laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fajar sidik priatna",
+            "email": "jardik.oryza@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jhonoryza\\ArgoTunnel\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jhonoryza\\ArgoTunnel\\Providers\\ArgoTunnelServiceProvider"
+            ]
+        }
+    },
+    "bin": [
+        "bin/cloudflared-linux-amd64"
+    ]
+}
