@@ -1,5 +1,17 @@
 # Integrate Laravel with ArgoTunnel Cloudflare
 
+<p align="center">
+    <a href="https://packagist.org/packages/jhonoryza/argotunnel-laravel">
+    <img src="https://poser.pugx.org/jhonoryza/argotunnel-laravel/d/total.svg" alt="Total Downloads">
+    </a>
+    <a href="https://packagist.org/packages/jhonoryza/argotunnel-laravel">
+        <img src="https://poser.pugx.org/jhonoryza/argotunnel-laravel/v/stable.svg" alt="Latest Stable Version">
+    </a>
+    <a href="https://packagist.org/packages/jhonoryza/argotunnel-laravel">
+        <img src="https://poser.pugx.org/jhonoryza/argotunnel-laravel/license.svg" alt="License">
+    </a>
+</p>
+
 This package allows you to connect to remote database that using argo tunnel from cloudflare, this assume that you have create a tunnel from your remote server with tcp connection.
 
 ## Installation
@@ -15,7 +27,7 @@ composer require jhonoryza/argotunnel-laravel
 
 ```
 ; Process used to verify connection
-; Use bash if your distro uses nmap-ncat (RHEL/CentOS 7.x) 
+; Use bash if your distro uses nmap-ncat (RHEL/CentOS 7.x)
 TUNNELER_VERIFY_PROCESS=nc
 
 ; Path to the nc executable
@@ -51,8 +63,8 @@ TUNNELER_PORT=sshport
 ; Depending on your network speeds you will want to modify the default of 1 seconds
 TUNNELER_CONN_WAIT=1000000
 
-; How often it is checked if the tunnel is created. Useful if the tunnel creation is sometimes slow, 
-; and you want to minimize waiting times 
+; How often it is checked if the tunnel is created. Useful if the tunnel creation is sometimes slow,
+; and you want to minimize waiting times
 TUNNELER_CONN_TRIES=1
 
 ; Do you want to ensure you have the Tunnel in place for each bootstrap of the framework?
